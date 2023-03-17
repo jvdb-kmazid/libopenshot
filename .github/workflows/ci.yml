@@ -81,8 +81,8 @@ jobs:
             libasound2-dev \
             qtbase5-dev qtbase5-dev-tools libqt5svg5-dev \
             libfdk-aac-dev libavcodec-dev libavformat-dev \
-            libavutil-dev libswscale-dev libswresample-dev \
-            libzmq3-dev libmagick++-dev libbabl-dev \
+            libavutil-dev libavresample-dev libswscale-dev \
+            libswresample-dev libzmq3-dev libmagick++-dev libbabl-dev \
             libopencv-dev libprotobuf-dev protobuf-compiler \
             cargo libomp5 libomp-dev
           # Install catch2 package from Ubuntu 20.10, since for some reason
