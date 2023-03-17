@@ -154,7 +154,7 @@ jobs:
                 -DCMAKE_SHARED_LINKER_FLAGS=-stdlib=libc++";
             fi
             cmake -B build -S . -G "${{ steps.generator.outputs.value }}" \
-              -DCMAKE_BUILD_TYPE="Debug" \
+              -DCMAKE_BUILD_TYPE="Release" \
               -DCMAKE_INSTALL_PREFIX="${{ github.workspace }}/install" \
               ${CMAKE_EXTRA}
           fi
@@ -192,7 +192,7 @@ jobs:
           fi
           mkdir build
           cmake -B build -S . -G "${{ steps.generator.outputs.value }}" \
-            -DCMAKE_BUILD_TYPE="Debug" \
+            -DCMAKE_BUILD_TYPE="Release" \
             -DCMAKE_INSTALL_PREFIX="${{ github.workspace }}/install" \
             -DOpenShotAudio_ROOT="./audio/build" \
             ${CMAKE_EXTRA} \
