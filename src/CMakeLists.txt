@@ -340,8 +340,8 @@ if(TARGET FFmpeg::swresample AND ${FFmpeg_avformat_VERSION} VERSION_GREATER "57.
   set(resample_lib swresample)
   set(USE_SW TRUE)
 else()
-  set(resample_lib avresample)
-  set(USE_SW FALSE)
+  set(resample_lib swresample)
+  set(USE_SW TRUE)
 endif()
 list(APPEND all_comps ${resample_lib})
 
