@@ -215,3 +215,10 @@ jobs:
         if: ${{ steps.coverage.outputs.value }}
         with:
           file: build/coverage.info
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: |
+            build/*.*
